@@ -62,9 +62,80 @@ p {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    position: relative;
+    margin-right: 40px;
 
 }
 
 .cart-button:hover {
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-image: url('https://www.designobject.it/wp-content/uploads/2014/08/icona-carrello-non-riquadrata.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+
+
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.counter {
+    color: white;
+    position: absolute;
+    left: 130%;
+    bottom: 15%;
+    font-size: 22px;
+}
+
+.basket {
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.basket_count {
+    padding: 0 10px 0 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.add,
+.remove {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    right: 35px;
+    top: 100px;
+    z-index: 100;
+    cursor: pointer;
 }
